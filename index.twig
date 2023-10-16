@@ -178,6 +178,31 @@
         </div>
     </div>
 
+    <div class="sp-px-6 sp-mt-6 sp-border-t sp-border-tertiary print:sp-px-0">
+        <div class="sp-container sp-py-6 sp-mx-auto print:sp-max-w-full">
+            <div class="sp-flex sp-flex-wrap sp-items-center">
+                <div class="sp-grow sp-w-full sp-mb-3 sm:sp-w-auto sm:sp-mb-0">
+                    <span class="sp-text-tertiary">
+                        &copy; {{ company }}
+                    </span>
+                </div>
+                {% if Config.get('settings.language_frontend_toggle') == 1 %}
+                    <div class="sp-flex-none sp-w-full sm:sp-w-auto print:sp-hidden">
+                        <i class="fas fa-language" title="{{ Lang.choice('general.language', 1) }}"></i> &nbsp;
+                        <select name="language" class="sp-bg-primary">
+                            {% for code, language in languages %}
+                                <option value="{{ code }}"
+                                        {% if code == App.getLocale() %}selected="selected"{% endif %}
+                                        {% if attribute(returnTo, code) is defined %}data-return-to="{{ attribute(returnTo, code) }}"{% endif %}>
+                                    {{ language }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 
     {{ View.fireHook('frontend.footer') }}
 
