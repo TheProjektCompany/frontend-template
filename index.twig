@@ -149,7 +149,7 @@
                             Contact Us
                         </a>
                     </li>
-                   
+
                     <li menuitemname="Account" class="d-block no-collapse dropdown no-collapse"
                         id="Secondary_Navbar-Account">
                         {% if auth_check() %}
@@ -163,12 +163,12 @@
                                 {% include 'frontend.' ~ template ~ '.navigation' with {'account': true} %}
                             </div>
                         </div>
-                    {% else %}
+                        {% else %}
 
-                    <a class="pr-4" href="{{ route('user.login') }}">
-                        {{ Lang.get('user.login') }}
-                    </a>
-                    {% endif %}
+                        <a class="pr-4" href="{{ route('user.login') }}">
+                            {{ Lang.get('user.login') }}
+                        </a>
+                        {% endif %}
                     </li>
                 </ul>
             </div>
