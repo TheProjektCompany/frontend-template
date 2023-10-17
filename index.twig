@@ -125,41 +125,31 @@
                 </form>
                 <ul id="nav" class="navbar-nav mr-auto">
                     <li menuitemname="Home" class="d-block no-collapse" id="Primary_Navbar-Home">
-                        <a class="pr-4" href="/index.php">
+                        <a class="pr-4" href="{{ route('core.frontend.home') }}">
                             Home
                         </a>
                     </li>
                     <li menuitemname="Announcements" class="d-block" id="Primary_Navbar-Announcements">
-                        <a class="pr-4" href="/announcements.php">
+                        <a class="pr-4" href="https://dev.tpc-hosting.net/announcements.php">
                             Announcements
                         </a>
                     </li>
                     <li menuitemname="Knowledgebase" class="d-block" id="Primary_Navbar-Knowledgebase">
-                        <a class="pr-4" href="/knowledgebase.php">
+                        <a class="pr-4" href="https://dev.tpc-hosting.net/knowledgebase.php">
                             Knowledgebase
                         </a>
                     </li>
                     <li menuitemname="Network Status" class="d-block" id="Primary_Navbar-Network_Status">
-                        <a class="pr-4" href="/serverstatus.php">
+                        <a class="pr-4" href="https://dev.tpc-hosting.net/serverstatus.php">
                             Network Status
                         </a>
                     </li>
                     <li menuitemname="Contact Us" class="d-block" id="Primary_Navbar-Contact_Us">
-                        <a class="pr-4" href="/contact.php">
+                        <a class="pr-4" href="https://dev.tpc-hosting.net/contact.php">
                             Contact Us
                         </a>
                     </li>
                    
-                    <li class="d-none dropdown collapsable-dropdown">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="collapsable-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenu">
-                        </ul>
-                    </li>
-
-
                     <li menuitemname="Account" class="d-block no-collapse dropdown no-collapse"
                         id="Secondary_Navbar-Account">
                         {% if auth_check() %}
