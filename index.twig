@@ -56,13 +56,13 @@
 
     <div class="navbar navbar-light">
         <div class="container">
-            <a class="navbar-brand mr-3" href="https://tpc-hosting.ro/">
-                                        <!-- <img src="/assets/img/logo.png" alt="TPC Management s.r.l." class="logo-img"> -->
-                    <img class="alignnone size-full wp-image-8" src="{{ get_logo(true) }}" alt="TPC Hosting Logo" width="168" height="60">
+            <a class="navbar-brand mr-3" href="{{ route('core.frontend.home') }}">
+                <!-- <img src="/assets/img/logo.png" alt="TPC Management s.r.l." class="logo-img"> -->
+                <img class="alignnone size-full wp-image-8" src="{{ get_logo(true) }}" alt="TPC Hosting Logo" width="168" height="60">
                                 </a>
 
             <form method="post" action="/knowledgebase/search" class="form-inline ml-auto">
-<input type="hidden" name="token" value="0217ce6007307868d702f97f4b5ed5acc919c41e">
+            <input type="hidden" name="token" value="0217ce6007307868d702f97f4b5ed5acc919c41e">
                 <div class="input-group search d-none d-xl-flex">
                     <div class="input-group-prepend">
                         <button class="btn btn-default" type="submit">
@@ -87,6 +87,183 @@
                     </button>
                 </li>
             </ul>
+        </div>
+    </div>
+
+
+    <div class="navbar navbar-expand-xl main-navbar-wrapper">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <form method="post" action="/knowledgebase/search" class="d-xl-none">
+<input type="hidden" name="token" value="0217ce6007307868d702f97f4b5ed5acc919c41e">
+                    <div class="input-group search w-100 mb-2">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-default" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <input class="form-control prepended-form-control" type="text" name="search" placeholder="Search our knowledgebase...">
+                    </div>
+                </form>
+                <ul id="nav" class="navbar-nav mr-auto">
+                        <li menuitemname="Home" class="d-block no-collapse" id="Primary_Navbar-Home">
+    <a class="pr-4" href="/index.php">
+                    Home
+                </a>
+        </li>
+<li menuitemname="Store" class="d-block dropdown no-collapse" id="Primary_Navbar-Store">
+    <a class="pr-4 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    Store
+                </a>
+                <ul class="dropdown-menu">
+                                            <li menuitemname="Browse Products Services" class="dropdown-item" id="Primary_Navbar-Store-Browse_Products_Services">
+                    <a href="/store" class="dropdown-item px-2 py-0">
+                                                    Browse All
+                                                </a>
+                </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li menuitemname="Game Server" class="dropdown-item" id="Primary_Navbar-Store-Game_Server">
+                    <a href="/store/game-server" class="dropdown-item px-2 py-0">
+                                                    Game Server
+                                                </a>
+                </li>
+                                                            <li menuitemname="Microsoft 365" class="dropdown-item" id="Primary_Navbar-Store-Microsoft_365">
+                    <a href="/store/microsoft-365" class="dropdown-item px-2 py-0">
+                                                    Microsoft 365
+                                                </a>
+                </li>
+                                                            <li menuitemname="Hosting" class="dropdown-item" id="Primary_Navbar-Store-Hosting">
+                    <a href="/store/hosting" class="dropdown-item px-2 py-0">
+                                                    Hosting
+                                                </a>
+                </li>
+                                                            <li menuitemname="VPS Hosting" class="dropdown-item" id="Primary_Navbar-Store-VPS_Hosting">
+                    <a href="/store/vps-hosting" class="dropdown-item px-2 py-0">
+                                                    VPS Hosting
+                                                </a>
+                </li>
+                                                            <li menuitemname="TPC PaaS Recharge" class="dropdown-item" id="Primary_Navbar-Store-TPC_PaaS_Recharge">
+                    <a href="/store/tpc-paas-recharge" class="dropdown-item px-2 py-0">
+                                                    TPC PaaS Recharge
+                                                </a>
+                </li>
+                                                            <li menuitemname="Cloud VPS Servers" class="dropdown-item" id="Primary_Navbar-Store-Cloud_VPS_Servers">
+                    <a href="/store/cloud-vps-servers" class="dropdown-item px-2 py-0">
+                                                    Cloud VPS Servers
+                                                </a>
+                </li>
+                                                            <li menuitemname="Acronis Cyber Cloud" class="dropdown-item" id="Primary_Navbar-Store-Acronis_Cyber_Cloud">
+                    <a href="/store/acronis-cyber-cloud" class="dropdown-item px-2 py-0">
+                                                    Acronis Cyber Cloud
+                                                </a>
+                </li>
+                                                            <li menuitemname="weebly" class="dropdown-item" id="Primary_Navbar-Store-weebly">
+                    <a href="/store/weebly-website-builder" class="dropdown-item px-2 py-0">
+                                                    Website Builder
+                                                </a>
+                </li>
+                                                            <li menuitemname="sitelock" class="dropdown-item" id="Primary_Navbar-Store-sitelock">
+                    <a href="/store/sitelock" class="dropdown-item px-2 py-0">
+                                                    Website Security
+                                                </a>
+                </li>
+                                                            <li menuitemname="marketgoo" class="dropdown-item" id="Primary_Navbar-Store-marketgoo">
+                    <a href="/store/marketgoo" class="dropdown-item px-2 py-0">
+                                                    SEO Tools
+                                                </a>
+                </li>
+                                                            <li menuitemname="spamexperts" class="dropdown-item" id="Primary_Navbar-Store-spamexperts">
+                    <a href="/store/email-spam-filtering" class="dropdown-item px-2 py-0">
+                                                    E-mail Services
+                                                </a>
+                </li>
+                                                            <li menuitemname="codeguard" class="dropdown-item" id="Primary_Navbar-Store-codeguard">
+                    <a href="/store/codeguard" class="dropdown-item px-2 py-0">
+                                                    Website Backup
+                                                </a>
+                </li>
+                                                            <li menuitemname="ox" class="dropdown-item" id="Primary_Navbar-Store-ox">
+                    <a href="/store/professional-email" class="dropdown-item px-2 py-0">
+                                                    Professional Email
+                                                </a>
+                </li>
+                                                            <li menuitemname="siteBuilder" class="dropdown-item" id="Primary_Navbar-Store-siteBuilder">
+                    <a href="/store/site-builder" class="dropdown-item px-2 py-0">
+                                                    Site Builder
+                                                </a>
+                </li>
+                                                            <li menuitemname="xovinow" class="dropdown-item" id="Primary_Navbar-Store-xovinow">
+                    <a href="/store/xovinow" class="dropdown-item px-2 py-0">
+                                                    XOVI NOW
+                                                </a>
+                </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li menuitemname="Register a New Domain" class="dropdown-item" id="Primary_Navbar-Store-Register_a_New_Domain">
+                    <a href="/cart.php?a=add&amp;domain=register" class="dropdown-item px-2 py-0">
+                                                    Register a New Domain
+                                                </a>
+                </li>
+                                                            <li menuitemname="Transfer a Domain to Us" class="dropdown-item" id="Primary_Navbar-Store-Transfer_a_Domain_to_Us">
+                    <a href="/cart.php?a=add&amp;domain=transfer" class="dropdown-item px-2 py-0">
+                                                    Transfer Domains to Us
+                                                </a>
+                </li>
+                                    </ul>
+        </li>
+<li menuitemname="Announcements" class="d-block" id="Primary_Navbar-Announcements">
+    <a class="pr-4" href="/announcements.php">
+                    Announcements
+                </a>
+        </li>
+<li menuitemname="Knowledgebase" class="d-block" id="Primary_Navbar-Knowledgebase">
+    <a class="pr-4" href="/knowledgebase.php">
+                    Knowledgebase
+                </a>
+        </li>
+<li menuitemname="Network Status" class="d-block" id="Primary_Navbar-Network_Status">
+    <a class="pr-4" href="/serverstatus.php">
+                    Network Status
+                </a>
+        </li>
+<li menuitemname="Contact Us" class="d-block" id="Primary_Navbar-Contact_Us">
+    <a class="pr-4" href="/contact.php">
+                    Contact Us
+                </a>
+        </li>
+<li menuitemname="BXRenewals" class="d-block" id="Primary_Navbar-BXRenewals">
+    <a class="pr-4" href="/index.php?m=BillingExtension&amp;view=Renewals">
+                    Renewals
+                </a>
+        </li>
+<li class="d-none dropdown collapsable-dropdown">
+    <a class="dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        More
+    </a>
+    <ul class="collapsable-dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenu">
+    </ul>
+</li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                        <li menuitemname="Account" class="d-block no-collapse dropdown no-collapse" id="Secondary_Navbar-Account">
+    <a class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    Account
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                                            <li menuitemname="Login" class="dropdown-item" id="Secondary_Navbar-Account-Login">
+                    <a href="/clientarea.php" class="dropdown-item px-2 py-0">
+                                                    Login
+                                                </a>
+                </li>
+                                                            <div class="dropdown-divider"></div>
+                                                            <li menuitemname="Forgot Password?" class="dropdown-item" id="Secondary_Navbar-Account-Forgot_Password?">
+                    <a href="/password/reset" class="dropdown-item px-2 py-0">
+                                                    Forgot Password?
+                                                </a>
+                </li>
+                                    </ul>
+        </li>
+                </ul>
+            </div>
         </div>
     </div>
 
