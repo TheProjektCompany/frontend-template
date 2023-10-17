@@ -44,7 +44,12 @@
             {% endif %}
 
             <div class="sp-flex sp-items-center sp-h-full">
-                
+                <div class="sp-grow dfgfdgdfgdfgdfgdfgdfgd">
+                    <a href="{{ route('core.frontend.home') }}">
+                        <img src="{{ get_logo(false) }}" alt="{{ company }}" class="sp-logo sp-inline dark:sp-hidden print:sp-inline" />
+                        <img src="{{ get_logo(true) }}" alt="{{ company }}" class="sp-logo sp-hidden dark:sp-inline print:sp-hidden" />
+                    </a>
+                </div>
 
                 <div class="sp-flex-none print:sp-hidden">
                     {% if not (route starts with 'core.frontend.home') and show_search %}
