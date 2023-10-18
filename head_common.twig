@@ -287,6 +287,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     @media only screen and (max-width: 100px) and (max-width: 800px) {
@@ -322,34 +323,40 @@
         li.trustpilot {
             padding: 20px 0 20px;
         }
-        img.payment-image {
-    width: 36px !important;
-    margin: 3px !important;
-}
-.inner-footerdown p {
-    margin: 0px 0px 20px;
-    line-height: 24px;
-}
 
-.inner-footerdown ul {
-    justify-content: center!important;
-    width: 100%!important;
-}
-.footer-A-card h4 {
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.footer-A-card h4::before {
-    bottom: -10px;
-    left: 0px !important;
-}
-.footer-imgs {
-    margin-bottom: 30px;
-    flex-direction: row;
-}
-.footer-A-card img {
-    margin-bottom: 15px;
-}
+        img.payment-image {
+            width: 36px !important;
+            margin: 3px !important;
+        }
+
+        .inner-footerdown p {
+            margin: 0px 0px 20px;
+            line-height: 24px;
+        }
+
+        .inner-footerdown ul {
+            justify-content: center !important;
+            width: 100% !important;
+        }
+
+        .footer-A-card h4 {
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        .footer-A-card h4::before {
+            bottom: -10px;
+            left: 0px !important;
+        }
+
+        .footer-imgs {
+            margin-bottom: 30px;
+            flex-direction: row;
+        }
+
+        .footer-A-card img {
+            margin-bottom: 15px;
+        }
 
         li.trustpilot {
             padding: 0px 0 20px !important;
@@ -757,6 +764,19 @@
     .footer-A-card-img1 img {
         width: 100%;
         height: auto;
+    }
+
+    .images-sec {
+        display: flex;
+        width: 85%;
+        align-items: center;
+        gap: 2px;
+        flex-wrap: wrap;
+    }
+
+    .footer-A-card-imgs .sp-flex-none.sp-w-full {
+        width: 15%;
+        text-align: right;
     }
 
     li.trustpilot a span {

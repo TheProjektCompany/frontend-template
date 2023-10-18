@@ -443,7 +443,8 @@
             <div class="payment-Method">
                 <h4>Payment Methods</h4>
                 <div class="footer-A-card-imgs">
-                    <img src="{{ asset_rev('resources/assets/frontend/img/visa.svg')}}" alt="Visa"
+                    <div class="images-sec">
+                        <img src="{{ asset_rev('resources/assets/frontend/img/visa.svg')}}" alt="Visa"
                         class="payment-image">
                     <img src="{{ asset_rev('resources/assets/frontend/img/mastercard.svg')}}" alt="MasterCard"
                         class="payment-image">
@@ -475,6 +476,7 @@
                         class="payment-image">
                     <img src="{{ asset_rev('resources/assets/frontend/img/giropay.svg')}}" alt="American Express"
                         class="payment-image">
+                    </div>
 
 
                     {% if Config.get('settings.language_frontend_toggle') == 1 %}
