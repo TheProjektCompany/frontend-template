@@ -477,7 +477,7 @@
                         class="payment-image">
 
 
-                    % if Config.get('settings.language_frontend_toggle') == 1 %}
+                    {% if Config.get('settings.language_frontend_toggle') == 1 %}
                     <div class="sp-flex-none sp-w-full sm:sp-w-auto print:sp-hidden">
                         <i class="fas fa-language" title="{{ Lang.choice('general.language', 1) }}"></i> &nbsp;
                         <select name="language" class="sp-bg-primary">
