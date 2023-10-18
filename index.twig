@@ -469,6 +469,22 @@
                     <img src="{{ asset_rev('resources/assets/frontend/img/giropay.svg')}}" alt="American Express"
                         class="payment-image">
                 </div>
+
+                {% if Config.get('settings.language_frontend_toggle') == 1 %}
+                    <div class="sp-flex-none sp-w-full sm:sp-w-auto print:sp-hidden">
+                        <i class="fas fa-language" title="{{ Lang.choice('general.language', 1) }}"></i> &nbsp;
+                        <select name="language" class="sp-bg-primary">
+                            {% for code, language in languages %}
+                                <option value="{{ code }}"
+                                        {% if code == App.getLocale() %}selected="selected"{% endif %}
+                                        {% if attribute(returnTo, code) is defined %}data-return-to="{{ attribute(returnTo, code) }}"{% endif %}>
+                                    {{ language }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                {% endif %}
+                
             </div>
         </div>
     </div>
@@ -479,7 +495,7 @@
     <div class="footerdown">
         <div class="container">
             <div class="inner-footerdown">
-                <p>Copyright 2023 | <a href="https://tpc-hosting{lang key='link'}/">{{ company }}</a> | All Rights
+                <p>Copyright 2023 | <a href="https://tpc-hosting{lang key='link'}/">TPC Hosting</a> | All Rights
                     Reserved | Powered by <a href="https://tpc-management.ro/">® The Projekt Company</a></p>
                 <ul>
                     <li><a href="https://www.facebook.com/TheProjektCompany"><i class="fa fa-facebook"
