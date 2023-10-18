@@ -35,23 +35,23 @@
                                                 src="{{ asset_rev('resources/assets/frontend/img/whatsapp.png')}}"
                                                 alt="WhatsApp" /> </a></li>
                                     <li><a title="Messenger" href="https://m.me/TheProjektCompany"><img
-                                                src="https://dev.tpc-hosting.net/assets/img/messenger.png"
+                                                src="{{ asset_rev('resources/assets/frontend/img/messenger.png')}}"
                                                 alt="Messenger" /> </a></li>
                                     <li><a title="Telegram" href="https://t.me/TPC_HostingBot"><img
-                                                src="https://dev.tpc-hosting.net/assets/img/telegram.png"
+                                                src="{{ asset_rev('resources/assets/frontend/img/telegram.png')}}"
                                                 alt="Telegram" /> </a></li>
                                     <li><a title="SMS"
                                             href="sms:+37282721090?&amp;body=Hallo, we have a question..."><img
-                                                src="https://dev.tpc-hosting.net/assets/img/sms.png" alt="SMS" /></a>
+                                                src="{{ asset_rev('resources/assets/frontend/img/sms.png')}}" alt="SMS" /></a>
                                     </li>
                                     <li><a title="Contact" href="https://tpc-hosting.com/contact/"><img
-                                                src="https://dev.tpc-hosting.net/assets/img/email.png"
+                                                src="{{ asset_rev('resources/assets/frontend/img/email.png')}}"
                                                 alt="E-mail" /></a></li>
                                     <li><a title="Phone" href="tel:+40316318458"><img
-                                                src="https://dev.tpc-hosting.net/assets/img/phone.png"
+                                                src="{{ asset_rev('resources/assets/frontend/img/phone.png')}}"
                                                 alt="Phone" /></a></li>
                                     <li><a title="discord" href="https://discord.gg/29T6Ns6F"><img
-                                                src="https://dev.tpc-hosting.net/assets/img/discord.png"
+                                                src="{{ asset_rev('resources/assets/frontend/img/discord.png')}}"
                                                 alt="discord" /></a></li>
                                 </ul>
                             </div>
@@ -73,7 +73,7 @@
         <div class="container">
             <a class="navbar-brand mr-3" href="{{ route('core.frontend.home') }}">
                 <!-- <img src="/assets/img/logo.png" alt="TPC Management s.r.l." class="logo-img"> -->
-                <img class="alignnone size-full wp-image-8" src="{{ get_logo(true) }}" alt="TPC Hosting Logo"
+                <img class="alignnone size-full wp-image-8" src="{{ asset_rev('resources/assets/frontend/img/tpc-hosting-logo-alb.svg')}}" alt="TPC Hosting Logo"
                     width="168" height="60">
             </a>
 
@@ -366,7 +366,7 @@
                 <div class="col-md-3">
                     <div class="footer-A-card">
                         <img class="alignnone size-full wp-image-8"
-                            src="https://dev.tpc-hosting.net/assets/img/tpc-hosting-logo-alb.png" alt="" width="168"
+                            src="{{ asset_rev('resources/assets/frontend/img/tpc-hosting-logo-alb.svg')}}" alt="" width="168"
                             height="60">
                         <p>
                             TPC Hosting offers top hosting solutions to help build and secure your business online.
@@ -424,51 +424,49 @@
 
                         <div class="row" style="margin: 0;">
                             <div class="footer-imgs">
-                                <img class="payment-img" src="https://dev.tpc-hosting.net/assets/img/iso_9001.svg">
-                                <img class="payment-img" src="https://dev.tpc-hosting.net/assets/img/iso_27001.svg">
-                                <img class="payment-img"
-                                    src="https://dev.tpc-hosting.net/assets/img/footer-payments/30DaysBadge.svg">
-                                <img class="payment-img"
-                                    src="https://dev.tpc-hosting.net/assets/img/MicrosoftTeams.png">
+                                <img class="payment-img" src="{{ asset_rev('resources/assets/frontend/img/iso_9001.svg')}}">
+                                <img class="payment-img" src="{{ asset_rev('resources/assets/frontend/img/iso_27001.svg')}}">
+                                <img class="payment-img" src="{{ asset_rev('resources/assets/frontend/img/30DaysBadge.svg')}}">
+                                <img class="payment-img" src="{{ asset_rev('resources/assets/frontend/img/MicrosoftTeams.png')}}">
                             </div>
                         </div>
 
-                    </div>
+                    </div>  {{ asset_rev('resources/assets/frontend/img/americanexpress.svg')}}
                 </div>
             </div>
             <div class="payment-Method">
                 <h4>Payment Methods</h4>
                 <div class="footer-A-card-imgs">
-                    <img src="https://dev.tpc-hosting.net/assets/img/visa.svg" alt="Visa" class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/mastercard.svg" alt="MasterCard"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/visa.svg')}}" alt="Visa" class="payment-image">
+                    <img src="{{ asset_rev('resources/assets/frontend/img/mastercard.svg')}}" alt="MasterCard"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/americanexpress.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/americanexpress.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/discover.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/discover.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/dinersclub.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/dinersclub.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/jcb.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/jcb.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/stripe.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/stripe.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/paypal.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/paypal.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/ideal.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/ideal.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/googlepay.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/googlepay.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/applepay.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/applepay.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/bitcoin.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/bitcoin.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/ethereum.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/ethereum.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/sepa.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/sepa.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/sofort.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/sofort.svg')}}" alt="American Express"
                         class="payment-image">
-                    <img src="https://dev.tpc-hosting.net/assets/img/giropay.svg" alt="American Express"
+                    <img src="{{ asset_rev('resources/assets/frontend/img/giropay.svg')}}" alt="American Express"
                         class="payment-image">
                 </div>
             </div>
