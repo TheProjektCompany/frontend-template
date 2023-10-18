@@ -327,12 +327,12 @@
         }
 
         .footer-A-card-imgs .sp-flex-none.sp-w-full {
-            width: 100%;
-            text-align: left;
+            width: 100% !important;
+            text-align: left !important;
         }
 
         .images-sec {
-            width: 100%;
+            width: 100% !important;
         }
 
         li.trustpilot {
@@ -427,6 +427,19 @@
     }
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .footer-A-card-imgs {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-A-card-imgs .sp-flex-none.sp-w-full {
+            width: 100% !important;
+            text-align: left !important;
+        }
+
+        .images-sec {
+            width: 100% !important;
+        }
         .footer-A-card img {
             width: 100% !important;
             height: auto !important;
