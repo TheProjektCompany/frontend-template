@@ -479,20 +479,6 @@
                     </div>
 
 
-                    {% if Config.get('settings.language_frontend_toggle') == 1 %}
-                    <div class="sp-flex-none sp-w-full sm:sp-w-auto print:sp-hidden">
-                        <i class="fas fa-language" title="{{ Lang.choice('general.language', 1) }}"></i> &nbsp;
-                        <select name="language" class="sp-bg-primary">
-                            {% for code, language in languages %}
-                            <option value="{{ code }}" {% if code==App.getLocale() %}selected="selected" {% endif %} {%
-                                if attribute(returnTo, code) is defined
-                                %}data-return-to="{{ attribute(returnTo, code) }}" {% endif %}>
-                                {{ language }}
-                            </option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    {% endif %}
                 </div>
 
 
